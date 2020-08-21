@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/0820/0820.js"></script>
+</head>
+<body>
+
+    <!-- 예제 -->
+    <!-- <script>
+        'use strict';
+//일정 간격으로 i값을 증가시키고 콘솔창에 출력하는 예제 정지버튼으로 정지가능
+let addNum = 0;
+let subNum = 1000;
+
+const auto1 = setInterval(function(){
+    addNum++;
+    console.log(`addNum: ${addNum}`);
+}, 3000);
+
+//3초 간격으로 반복실행 값이 1씩증가
+
+const auto2 = setInterval(function() {
+    subNum--;
+    console.log(`subNum: ${subNum}`);
+}, 3000);
+
+</script>
+
+<h1>일정 시간 간격으로 값 증감시키기</h1>
+<button onclick="clearInterval(auto1)"> 증가 정지 </button>
+<button onclick="clearInterval(auto2)"> 감소 정지 </button> -->
+
+
+<script>
+    'use strict';
+// let tim = setTimeout(function(){i++},5000);
+// let tim = setTimeout("i++",5000);
+// //5초후 한번 값 증가 
+// clearTimeout(tim);
+
+
+let addNum = 0;
+const auto = setTimeout(() => {
+    addNum++;
+    console.log(`addNum: ${addNum}`);
+},5000);
+
+ //브라우저 객체모델을 사용해 운영체제 스크린 정보 얻기
+  const info = navigator.userAgent.toLowerCase();
+  //운영체제의 정보를 구한후 소문자로 치환
+let osimg = null;
+
+  if (info.indexOf('windows') >= 0 ) {
+      osimg = "windows.png";
+  } else if (info.indexOf('macintosh') >= 0 ) {
+      osimg = "macintosh.png";
+  } else if (info.indexOf('iphone') >= 0 ) {
+      osimg = "iphone.png";
+  } else if (info.indexOf('android') >= 0 ) {
+      osimg = "android.png";
+  }
+
+
+  document.write("<img src=\"/0820/images_os/"+osimg+"\">", "<br>");
+
+const scr = screen;
+const scr_w = scr.width;
+const scr_h = scr.height;
+document.write(`모니터 해상도 너비: ${scr_w}, <br>`);
+
+document.write(`모니터 해상도 높이: ${scr_h}, <br>`);
+
+
+// 도전 예제
+
+const phoneNum = '010-2345-4567';
+const result1 = phoneNum.substring(0,phoneNum.length - 4) + "****";
+document.write(result1,"<br>");
+
+
+const imgSrc = "images/bnt_out.png";
+const result2 = imgSrc.replace('out','over');
+document.write(result2,"<br>");
+
+
+
+const menu = ['짜장면','돈까스','된장국','김치찌개','회덮밥'];
+const menuNum = Math.floor(Math.random(menu.length));
+const result = menu[menuNum];
+document.write(result,"<br>");
+
+
+</script>
+
+
+</body>
+</html>

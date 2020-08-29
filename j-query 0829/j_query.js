@@ -72,7 +72,9 @@ $(".btn2").on({
 $(".btn2").trigger("mouseover");
 
 
-
+$(".btn1").off("click");
+$(".btn2").off("mouseover focus");
+//이벤트 제거
 
 
 

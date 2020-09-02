@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body{
+            height: 10000px;
+            width: 5000px;
+        }
+
+        #wrap{
+            position: fixed;
+            left: 10px;
+            top:10px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id="wrap">
+        <p>scrollTop: <span class="top">0</span>px</p>
+
+        <p>scrollleft: <span class="left">0</span>px</p>
+    </div>
+
+
+    <h1>focus/ blur</h1>
+    <form action="#">
+        <p>
+            <label for="user_id1">ID</label>
+
+            <input type="text" name="user_id1" id="user_id1">
+        </p>
+        
+        <p>
+            <label for="user_pw1">PW</label>
+
+            <input type="password" name="user_pw1" id="user_pw1">
+        </p>
+        
+
+    </form>
+
+    
+    <h1>focusin /focusout</h1>
+    <form action="#" id="frm2">
+        <p>
+            <label for="user_id2">ID</label>
+
+            <input type="text" name="user_id2" id="user_id2">
+        </p>
+        
+        <p>
+            <label for="user_pw2">PW</label>
+
+            <input type="password" name="user_pw2" id="user_pw2">
+        </p>
+        
+
+    </form>
+
+
+<p><button class="btn1">버튼1</button></p>
+<p><button class="btn2">버튼2</button></p>
+<!-- <p class="txt"> -->
+
+</p>
+
+<select id="rel_site">
+    <option value="">사이트 선택</option>
+    <option value="www.google.com">구글</option>
+    <option value="www.naver.com">네이버</option>
+    <option value="www.daum.net">다음</option>
+  
+</select>
+<p class="txt"></p>
+
+
+<p><input type="text" name="user_id" id="user_id"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="j_query.js"></script>
+   
+</body>
+</html>

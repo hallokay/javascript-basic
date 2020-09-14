@@ -1,0 +1,105 @@
+ *{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ h1,h2,h3,h4,h5,h6{
+    font-size: 15px; 
+    color: currentColor; 
+    font-weight: normal;  
+}
+
+
+ body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);d: ;
+    color: #e2edff;
+    font-family:'poppins', sans-serif;
+    font-weight: 100; 
+    min-height: 100vh;
+    }
+
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+} 
+
+/* 인풋 */
+form input,
+form button {
+    padding: .2em;
+    font-size: 2em;
+}
+
+.todo_btn {
+    color: #a1c4fd;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.todo_btn:hover {
+    background: #a1c4fd;
+    color: aliceblue;
+    border: 0;
+}
+
+
+/* todo list  */
+.todo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list {
+    min-width: 30%;
+}
+
+.todo {
+    display: flex;
+    margin: .5em;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    background: aliceblue;
+    color: #a1c4fd;
+    font-weight: 300;
+    transition: all .5s ease;
+}
+.todo_item {
+    flex: 1;
+    padding: .3em;
+}
+
+.checked_btn, 
+.del_btn {
+    font-size: 1em;
+    background: #a1c4fd;
+    color: aliceblue;
+    border: none;
+    padding: .4em .6em;
+    cursor: pointer;
+}
+.del_btn  {
+    background: aliceblue;
+    color: #a1c4fd;
+}
+
+i {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
